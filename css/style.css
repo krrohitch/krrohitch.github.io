@@ -113,7 +113,7 @@ body::-webkit-scrollbar-thumb {
 .hero-background {
 	width: 100%;
 	color: #EEE;
-	background: url(../assets/profile.jpg) no-repeat center;
+	background: url(../assets/profile.jpg) no-repeat top;
 	background-size: 100% auto;
 	border-radius: 50% / 10%;
 	margin-top: -6rem;
