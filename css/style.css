@@ -23,25 +23,25 @@ a, a:visited {
 }
 
 @font-face {
-	font-family: 'Proxima Nova';
+	font-family: "Proxima Nova";
 	src: url(assets/ProximaNova-Light.otf);
 	font-weight: 200;
 }
 
 @font-face {
-	font-family: 'Proxima Nova';
+	font-family: "Proxima Nova";
 	src: url(assets/ProximaNova-Regular.otf);
 	font-weight: 400;
 }
 
 @font-face {
-	font-family: 'Proxima Nova';
+	font-family: "Proxima Nova";
 	src: url(assets/ProximaNova-Semibold.otf);
 	font-weight: 500;
 }
 
 @font-face {
-	font-family: 'Proxima Nova';
+	font-family: "Proxima Nova";
 	src: url(assets/ProximaNova-Extrabold.otf);
 	font-weight: 700;
 }
