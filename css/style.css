@@ -28,13 +28,7 @@ body {
 	margin: 0;
 	font-size: 20px;
 	font-family: 'Graphik', Verdana, Roboto, sans-serif;
-	background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAIElEQVQoU2P0Vmuy3Xqr7jADAcBISAFMflQh3pAiOngAXYMEC6JkPMQAAAAASUVORK5CYII=);
-	background-size: 16px;
 	overflow-x: hidden;
-}
-
-body>div {
-	background-image: linear-gradient(to bottom, rgba(250,250,250,0), rgba(250,250,250,1));
 }
 
 h1 {
@@ -91,7 +85,7 @@ a {
 a.btn {
 	margin-top: 2rem;
 	font-weight: 500;
-	padding: 0.5rem 2rem 0.6em 2rem;
+	padding: 0.5rem 2rem;
 	border-radius: 4px;
 	color: #FFF;
 	background-color: #19181F;
@@ -114,9 +108,34 @@ a.link:hover {
 	transition: 0.5s all;
 }
 
+body>div {
+	background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAIElEQVQoU2P0Vmuy3Xqr7jADAcBISAFMflQh3pAiOngAXYMEC6JkPMQAAAAASUVORK5CYII=);
+	background-size: 16px;
+	animation: fadein 2s ease-in-out;
+}
+
+#preloader {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100vw;
+	height: 100vh;
+}
+
+#container {
+	display: none;
+	background-image: linear-gradient(to bottom, rgba(250,250,250,0), rgba(250,250,250,1));
+	animation: fadein 0.8s ease-in;
+}
+
+@keyframes fadein {
+	0%	 {opacity: 0};
+	100% {opacity: 1};
+}
+
 .cta {
 	font-weight: 500;
-	padding: 0.5rem 2rem 0.6em 2rem;
+	padding: 0.5rem 2rem;
 	position: fixed;
 	bottom: 2rem;
 	right: 4rem;
@@ -162,6 +181,12 @@ section {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	animation: moveup 0.8s ease-in;
+}
+
+@keyframes moveup {
+	0%	 {padding-top: 1.5em};
+	100% {padding-top: 0}
 }
 
 #hero {

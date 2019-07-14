@@ -28,10 +28,17 @@
 	<link href="css/mobi-style.css" type="text/css" rel="stylesheet" media="only screen and (max-width: 767px)">
     <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
 
-</head>
-<body>
+	<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
 
+</head>
+<body onload="preloader()">
 	<div>
+	<div id="preloader">
+		<img src="images/loader.gif">
+	</div>
+
+	<div id="container">
 	<a class="cta" href="mailto:krrohitch@gmail.com"><span>Email me</span></a>
 
 	<nav>
@@ -173,9 +180,8 @@
 
 	</section>
 	</div>
-
-	<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
-	<script type="text/javascript" src="js/script.js"></script>
+	
+	</div>
 
 </body>
 </html>
