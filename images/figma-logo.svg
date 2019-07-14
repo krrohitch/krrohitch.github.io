@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+  <g id="figma-logo" transform="translate(-423 -725.75)">
+    <g id="Rectangle_22" data-name="Rectangle 22" transform="translate(426.75 726.688)" fill="none" stroke="#212121" stroke-linejoin="round" stroke-width="1">
+      <rect width="11.875" height="5.625" rx="2.813" stroke="none"/>
+      <rect x="0.5" y="0.5" width="10.875" height="4.625" rx="2.313" fill="none"/>
+    </g>
+    <g id="Rectangle_23" data-name="Rectangle 23" transform="translate(426.75 732.938)" fill="none" stroke="#212121" stroke-linejoin="round" stroke-width="1">
+      <path d="M2.813,0H5.625a0,0,0,0,1,0,0V5.625a0,0,0,0,1,0,0H2.813A2.813,2.813,0,0,1,0,2.813v0A2.813,2.813,0,0,1,2.813,0Z" stroke="none"/>
+      <path d="M2.813.5H4.7a.42.42,0,0,1,.42.42V4.7a.42.42,0,0,1-.42.42H2.813A2.313,2.313,0,0,1,.5,2.813v0A2.313,2.313,0,0,1,2.813.5Z" fill="none"/>
+    </g>
+    <g id="Rectangle_24" data-name="Rectangle 24" transform="translate(426.75 739.188)" fill="none" stroke="#212121" stroke-linejoin="round" stroke-width="1">
+      <path d="M2.813,0H5.625a0,0,0,0,1,0,0V2.813A2.813,2.813,0,0,1,2.813,5.625h0A2.813,2.813,0,0,1,0,2.813v0A2.813,2.813,0,0,1,2.813,0Z" stroke="none"/>
+      <path d="M2.813.5H4.7a.42.42,0,0,1,.42.42V2.812A2.313,2.313,0,0,1,2.813,5.125h0A2.313,2.313,0,0,1,.5,2.813v0A2.313,2.313,0,0,1,2.813.5Z" fill="none"/>
+    </g>
+    <g id="Ellipse_8" data-name="Ellipse 8" transform="translate(432.688 732.938)" fill="none" stroke="#212121" stroke-linejoin="round" stroke-width="1">
+      <circle cx="2.813" cy="2.813" r="2.813" stroke="none"/>
+      <circle cx="2.813" cy="2.813" r="2.313" fill="none"/>
+    </g>
+    <rect id="Rectangle_33" data-name="Rectangle 33" width="20" height="20" transform="translate(423 725.75)" fill="none"/>
+  </g>
+</svg>

@@ -1,0 +1,88 @@
+
+body {
+	font-size: 16px;
+	background-size: 12px;
+}
+
+h1 {
+	font-size: 1.5em;
+}
+
+h2 {
+	font-size: 1.375em;
+}
+
+h3 {
+	font-size: 1.375em;
+}
+
+h5 {
+	font-size: 0.875em;
+}
+
+p {
+	font-size: 1em;
+}
+
+a.btn {
+	padding: 0.25em 1.5em 0.5em 1.5em;
+	font-size: 0.875em;
+}
+
+a.link {
+	padding: 0 0.5em;
+	font-size: 0.875em;
+}
+
+.cta {
+	position: absolute;
+	padding: 0.25em 1.5em 0.5em 1.5em;
+	bottom: 2em;
+	right: 2em
+}
+
+nav {
+	padding: 1em 2em;
+}
+
+nav .link {
+	display: none;
+}
+
+.right-nav {
+	padding-top: 0.75em;
+}
+
+section {
+	min-width: 80%;
+}
+
+.proj-box {
+	min-width: 80%;
+	margin-bottom: 6em;
+	flex-direction: column;
+	align-items: flex-start;
+}
+
+.proj-img {
+	margin: 0;
+	width: 100%;
+	min-width: 0;
+	margin-bottom: 1rem;
+}
+
+.skil-tool {
+	grid-template-columns: repeat(2, 1.5em 1fr);
+}
+
+.skil-dsgn {
+	grid-template-columns: 1.5em 1fr;
+}
+
+.social {
+	flex-direction: column;
+}
+
+.social .link {
+	margin-bottom: 0.75em;
+}

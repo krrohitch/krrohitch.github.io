@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+  <g id="bullet" transform="translate(-0.5 0.006)">
+    <path id="Path_90" data-name="Path 90" d="M18,9.263V10a8,8,0,1,1-4.744-7.312" transform="translate(0 0)" fill="none" stroke="#212121" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.25"/>
+    <path id="Path_91" data-name="Path 91" d="M19.4,4l-8,8.008L9,9.608" transform="translate(-1.4 -0.401)" fill="none" stroke="#212121" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.25"/>
+    <rect id="Rectangle_44" data-name="Rectangle 44" width="20" height="20" transform="translate(0.5 -0.006)" fill="none"/>
+  </g>
+</svg>

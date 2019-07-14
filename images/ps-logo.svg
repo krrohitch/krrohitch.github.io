@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+  <g id="ps-logo" transform="translate(-553 -672)">
+    <g id="Rectangle_25" data-name="Rectangle 25" transform="translate(554.25 673.25)" fill="none" stroke="#212121" stroke-width="1">
+      <rect width="17.5" height="17.5" rx="2" stroke="none"/>
+      <rect x="0.5" y="0.5" width="16.5" height="16.5" rx="1.5" fill="none"/>
+    </g>
+    <text id="Ps" transform="translate(563.25 685.5)" fill="#212121" font-size="10" font-family="Graphik-Medium, Graphik" font-weight="500" letter-spacing="-0.02em"><tspan x="-5.415" y="0">Ps</tspan></text>
+    <rect id="Rectangle_40" data-name="Rectangle 40" width="20" height="20" transform="translate(553 672)" fill="none"/>
+  </g>
+</svg>

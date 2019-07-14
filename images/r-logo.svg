@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="48" height="48" viewBox="0 0 48 48">
+  <defs>
+    <clipPath id="clip-path">
+      <rect width="48" height="48" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="r-logo" clip-path="url(#clip-path)">
+    <rect id="Rectangle_12" data-name="Rectangle 12" width="48" height="48" fill="#692db7"/>
+    <text id="R" transform="translate(24 34)" fill="#fafafa" font-size="32" font-family="Objective-Bold, Objective" font-weight="700"><tspan x="-12.32" y="0">R</tspan></text>
+  </g>
+</svg>
