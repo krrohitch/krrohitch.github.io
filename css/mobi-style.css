@@ -24,7 +24,7 @@ p {
 }
 
 a.btn {
-	padding: 0.5em 1.5em;
+	padding: 0.5em 1.75em 0.75em;
 	font-size: 0.875em;
 }
 
@@ -35,7 +35,7 @@ a.link {
 
 .cta {
 	position: absolute;
-	padding: 0.5em 1.5em;
+	padding: 0.5em 1.75em 0.75em;
 	right: 2em
 }
 
@@ -83,4 +83,11 @@ section {
 
 .social .link {
 	margin-bottom: 0.75em;
+}
+
+#top {
+	position: initial;
+    text-align: center;
+    left: auto;
+    bottom: 4rem;
 }
