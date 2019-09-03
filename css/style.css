@@ -28,8 +28,8 @@ body {
 	margin: 0;
 	font-size: 20px;
 	font-family: 'Graphik', Verdana, Roboto, sans-serif;
+  -webkit-font-smoothing: antialiased;
 	overflow-x: hidden;
-	animation: all;
 }
 
 h1 {
@@ -89,13 +89,13 @@ a.btn {
 	border-radius: 4px;
 	color: #FFF;
 	background-color: #19181F;
-	box-shadow: 0 0.25em 0.5em rgba(0,0,0,.4);
+	box-shadow: 0 4px 8px rgba(0,0,0,.4);
 }
 
 a.btn:hover {
 	background-color: #692DB7;
 	transition: 0.5s all;
-	box-shadow: 0 0.25em 0.5em rgba(105,45,183,.4);
+	box-shadow: 0 4px 8px rgba(105,45,183,.4);
 }
 
 a.link {
@@ -105,7 +105,7 @@ a.link {
 
 a.link:hover {
 	color: #692DB7;
-	transition: 0.5s all;
+	transition: 0.5s ease-in-out;
 }
 
 body>div {
@@ -124,7 +124,7 @@ body>div {
 
 #container {
 	display: none;
-	background-image: linear-gradient(to bottom, rgba(250,250,250,0), rgba(250,250,250,1));
+	background-image: linear-gradient(to bottom, rgba(250,250,250,0), rgba(250,250,250,0.8));
 	animation: fadein 0.8s ease-in;
 }
 
@@ -134,20 +134,19 @@ body>div {
 }
 
 .cta {
-	font-weight: 500;
-	padding: 0.5rem 2rem 0.75rem;
+	padding: 1rem;
 	position: fixed;
 	bottom: 2rem;
 	right: 4rem;
-	color: #692DB7;
-	border-radius: 4px;
+	border-radius: 50%;
 	background-color: rgba(250,250,250,0.6);
+	box-shadow: 0 4px 8px rgba(105,45,183,.12);
 }
 
 .cta:hover {
 	background-color: #FFF;
-	transition: 0.5s all;
-	box-shadow: 0 0.25em 0.5em rgba(105,45,183,.24);
+	transition: 0.5s ease-in;
+	box-shadow: 0 4px 12px rgba(105,45,183,.24);
 }
 
 nav {
@@ -155,16 +154,13 @@ nav {
 	border-top: 8px solid #692DB7;
 	display: flex;
 	flex-direction: row;
+	justify-content: space-between;
 }
 
 .left-nav {
-	width: 25%;
-	text-align: left;
 }
 
 .right-nav {
-	width: 75%;
-	text-align: right;
 	padding-top: 0.5rem;
 }
 
@@ -212,7 +208,6 @@ section {
 }
 
 #projects {
-	width: 75%;
 	align-items: center;
 }
 
@@ -300,20 +295,31 @@ section {
 	margin: 3em auto;
 }
 
+.social img {
+	width: 0.8em;
+	margin-right: 0.25em;
+	padding-top: 0.25em;
+}
+
+.social img path {
+	fill: #692DB7;
+}
+
 #top {
 	display: none;
 	font-weight: 500;
-	padding: 0.5rem 2rem 0.75rem;
+	padding: 1rem;
 	position: fixed;
 	bottom: 2rem;
 	left: 4rem;
-	border-radius: 4px;
+	border-radius: 50%;
 	background-color: rgba(250,250,250,0.6);
+	box-shadow: 0 4px 8px rgba(105,45,183,.12);
 	animation: fadein 0.8s ease-in;
 }
 
 #top:hover {
 	background-color: #FFF;
-	transition: 0.5s all;
-	box-shadow: 0 0.25em 0.5em rgba(105,45,183,.24);
+	transition: 0.5s ease-in;
+	box-shadow: 0 4px 12px rgba(105,45,183,.24);
 }

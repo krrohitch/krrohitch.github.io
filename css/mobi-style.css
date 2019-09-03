@@ -35,8 +35,8 @@ a.link {
 
 .cta {
 	position: absolute;
-	padding: 0.5em 1.75em 0.75em;
-	right: 2em
+	right: 2em;
+	box-shadow: 0 4px 8px rgba(105,45,183,.24);
 }
 
 nav {
@@ -55,11 +55,25 @@ section {
 	min-width: 80%;
 }
 
-.proj-box {
+#projects {
 	min-width: 80%;
-	margin-bottom: 6em;
+}
+
+/*.proj-container {
+	width: 100%;
+	min-width: 80%;
+    display: inline-flex;
+    justify-content: flex-start;
+	overflow-x: scroll;
+	padding-left: 6rem;
+	padding-right: 8rem;
+}*/
+
+.proj-box {
+	margin-bottom: 2em;
 	flex-direction: column;
-	align-items: flex-start;
+	justify-content: flex-start;
+	margin-bottom: 4rem;
 }
 
 .proj-img {
@@ -86,8 +100,7 @@ section {
 }
 
 #top {
-	position: initial;
     text-align: center;
-    left: auto;
-    bottom: 4rem;
+    left: 2em;
+	box-shadow: 0 4px 8px rgba(105,45,183,.24);
 }

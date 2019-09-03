@@ -1,10 +1,3 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
-  <g id="sketch-logo" transform="translate(-422 -699.5)">
-    <path id="Path_81" data-name="Path 81" d="M-348.25,717.25l8.75-10-3.75-5-5-1.25-5,1.25-3.75,5Z" transform="translate(780.25 0.375)" fill="none" stroke="#212121" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
-    <path id="Path_82" data-name="Path 82" d="M-354,707.25l5-6.25,5,6.25-5,10Z" transform="translate(781 0.375)" fill="none" stroke="#212121" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
-    <path id="Path_83" data-name="Path 83" d="M-357,706h17.5" transform="translate(780.25 1.625)" fill="none" stroke="#212121" stroke-linecap="round" stroke-width="1"/>
-    <path id="Path_84" data-name="Path 84" d="M-354,702v5" transform="translate(781 0.625)" fill="none" stroke="#212121" stroke-linecap="round" stroke-width="1"/>
-    <path id="PATH_85" data-name="PATH 85" d="M-346,702v5" transform="translate(783 0.625)" fill="none" stroke="#212121" stroke-linecap="round" stroke-width="1"/>
-    <rect id="Rectangle_35" data-name="Rectangle 35" width="20" height="20" transform="translate(422 699.5)" fill="none"/>
-  </g>
+<svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M5.90905 0.843731C5.96877 0.828803 6.03124 0.828803 6.09095 0.843731L9.09095 1.59373C9.17451 1.61462 9.24833 1.66363 9.3 1.73253L11.55 4.73253C11.6563 4.87429 11.6489 5.07112 11.5322 5.20447L6.28222 11.2045C6.21101 11.2859 6.10814 11.3325 6 11.3325C5.89187 11.3325 5.78899 11.2859 5.71779 11.2045L0.467785 5.20447C0.3511 5.07112 0.343683 4.87429 0.450001 4.73253L2.7 1.73253C2.75168 1.66363 2.8255 1.61462 2.90905 1.59373L5.90905 0.843731ZM2.625 3.08253L1.5 4.58253H2.625V3.08253ZM2.76824 5.33253H1.57641L4.35734 8.51073L2.76824 5.33253ZM7.64266 8.51073L10.4236 5.33253H9.23176L7.64266 8.51073ZM9.375 4.58253H10.5L9.375 3.08253V4.58253ZM8.625 2.25033L6.98684 1.84078L8.625 3.88849V2.25033ZM8.21977 4.58253L6 1.80783L3.78024 4.58253H8.21977ZM3.60676 5.33253H8.39324L6 10.119L3.60676 5.33253ZM3.375 3.88849L5.01317 1.84078L3.375 2.25033V3.88849Z" fill="#424242"/>
 </svg>

@@ -2,7 +2,7 @@
 var timer;
 
 function preloader() {
-	timer = setTimeout(showPage, 2000);
+	timer = setTimeout(showPage, 1800);
 }
 
 function showPage() {
@@ -11,17 +11,12 @@ function showPage() {
 }
 
 // Smooth scroll
-$('.smoothScroll').click(function () {
-  if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
-    var target = $(this.hash);
-    target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-    if (target.length) {
-      $('html,body').animate({
-        scrollTop: target.offset().top + 120
-      }, 800);
-    return false;
-    }
-  }
+$(".smoothScroll").on("click", function (evt) {
+	var href = $(this).attr("href");
+	$("html, body").animate({
+  	scrollTop: $(href).offset().top + 120
+  }, 800);
+  evt.preventDefault();
 });
 
 // Scroll to top
@@ -35,7 +30,10 @@ function scrollFunction() {
   }
 }
 
-function topFunction() {
-  document.body.scrollTop = 0;
-  document.documentElement.scrollTop = 0;
-}
+$("#top").on("click", function (evt) {
+	var href = $(this).attr("href");
+	$("html, body").animate({
+  	scrollTop: $(href).offset().top
+  }, 800);
+  evt.preventDefault();
+});
