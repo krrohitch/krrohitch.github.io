@@ -1,11 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="48" height="48" viewBox="0 0 48 48">
-  <defs>
-    <clipPath id="clip-path">
-      <rect width="48" height="48" fill="none"/>
-    </clipPath>
-  </defs>
-  <g id="r-logo" clip-path="url(#clip-path)">
-    <rect id="Rectangle_12" data-name="Rectangle 12" width="48" height="48" fill="#692db7"/>
-    <text id="R" transform="translate(24 34)" fill="#fafafa" font-size="32" font-family="Objective-Bold, Objective" font-weight="700"><tspan x="-12.32" y="0">R</tspan></text>
-  </g>
+<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="r-logo">
+<path id="bg" d="M48 0H0V48H48V0Z" fill="#692DB7"/>
+<path id="R" d="M14 35.2153H19.2418V27.4462H23.766L28.1342 35.2153H34L28.6334 26.7285C31.5351 25.7925 33.5008 23.3588 33.5008 20.3947C33.5008 16.0265 29.9126 13 24.7644 13H14V35.2153ZM23.922 16.9626C26.3869 16.9626 28.259 18.2106 28.259 20.3947C28.259 22.3916 26.3869 23.7332 23.922 23.7332H19.2418V16.9626H23.922Z" fill="white"/>
+</g>
 </svg>
