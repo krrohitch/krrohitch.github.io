@@ -87,6 +87,10 @@ section {
 	max-width: inherit;
 }
 
+.btn img {
+	padding-top: 0.2em;
+}
+
 .skil-tool {
 	grid-template-columns: repeat(2, 1.5em 1fr);
 }

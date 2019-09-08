@@ -28,7 +28,7 @@ body {
 	margin: 0;
 	font-size: 20px;
 	font-family: 'Graphik', Verdana, Roboto, sans-serif;
-  -webkit-font-smoothing: antialiased;
+	-webkit-font-smoothing: antialiased;
 	overflow-x: hidden;
 }
 
@@ -83,13 +83,15 @@ a {
 }
 
 a.btn {
-	margin-top: 2rem;
+	margin-top: 2em;
 	font-weight: 500;
 	padding: 0.5rem 2rem 0.75rem;
 	border-radius: 4px;
 	color: #FFF;
 	background-color: #19181F;
 	box-shadow: 0 4px 8px rgba(0,0,0,.4);
+	display: inline-flex;
+	align-items: center;
 }
 
 a.btn:hover {
@@ -223,20 +225,38 @@ section {
 .proj-img {
 	width: 480px;
 	min-width: 400px;
-	margin-left: 2rem;
+	margin-left: 1.25em;
 }
 
 .proj-info {
 	max-width: 20em;
-	min-width: 12em;
+	min-width: 14em;
 }
 
 .proj-info p {
 	margin-bottom: 1.6em;
 }
 
+.proj-info .btn {
+	margin-top: 0;
+}
+
 .proj-box:last-child {
 	margin-bottom: 1em;
+}
+
+.btn img {
+	padding-top: 0.25em;
+	padding-left: 0.5em;
+}
+
+.btn-inactive {
+	background-color: #71717A !important;
+	box-shadow: none !important;
+}
+
+.btn-inactive:hover {
+	background-color: #7a7a85 !important;
 }
 
 #skills {
@@ -305,7 +325,7 @@ section {
 	fill: #692DB7;
 }
 
-#top {
+#topScroll {
 	display: none;
 	font-weight: 500;
 	padding: 1rem;
@@ -318,7 +338,7 @@ section {
 	animation: fadein 0.8s ease-in;
 }
 
-#top:hover {
+#topScroll:hover {
 	background-color: #FFF;
 	transition: 0.5s ease-in;
 	box-shadow: 0 4px 12px rgba(105,45,183,.24);

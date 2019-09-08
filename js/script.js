@@ -24,13 +24,13 @@ window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
   if (document.body.scrollTop > 4000 || document.documentElement.scrollTop > 4000) {
-    document.getElementById("top").style.display = "block";
+    document.getElementById("topScroll").style.display = "block";
   } else {
-    document.getElementById("top").style.display = "none";
+    document.getElementById("topScroll").style.display = "none";
   }
 }
 
-$("#top").on("click", function (evt) {
+$("#topScroll").on("click", function (evt) {
 	var href = $(this).attr("href");
 	$("html, body").animate({
   	scrollTop: $(href).offset().top
