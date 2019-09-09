@@ -89,6 +89,7 @@ section {
 }
 
 .btn img {
+	padding-top: initial;
 	width: 0.8em;
 }
 
