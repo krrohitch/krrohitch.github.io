@@ -92,6 +92,7 @@ a.btn {
 	box-shadow: 0 4px 8px rgba(0,0,0,.4);
 	display: inline-flex;
 	flex-direction: row;
+	align-items: center;
 }
 
 a.btn:hover {
