@@ -24,7 +24,7 @@ p {
 }
 
 a.btn {
-	padding: 0.5em 1.75em 0.75em;
+	padding: 0.5em 1.75em 1em;
 	font-size: 0.875em;
 }
 
@@ -85,14 +85,22 @@ section {
 
 .proj-info {
 	max-width: inherit;
+	text-align: center;
 }
 
 .btn img {
 	padding-top: 0.2em;
 }
 
+.skil-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .skil-tool {
-	grid-template-columns: repeat(2, 1.5em 1fr);
+	grid-template-columns: repeat(2, 0 1fr);
+	grid-column-gap: 1.5em;
 }
 
 .skil-dsgn {
@@ -108,7 +116,7 @@ section {
 	margin-bottom: 0.75em;
 }
 
-#top {
+#topScroll {
     text-align: center;
     left: 2em;
 	box-shadow: 0 4px 8px rgba(105,45,183,.24);
