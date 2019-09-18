@@ -226,7 +226,26 @@ section {
 .proj-img {
 	width: 480px;
 	min-width: 400px;
+	max-height: 300px;
 	margin-left: 1.25em;
+	overflow: hidden;
+	border-radius: 8px;
+}
+
+.item {
+	top: 0;
+	left: 0;
+}
+
+.item img {
+	width: 100%;
+	-webkit-transition: 0.6s ease;
+	transition: 0.6s ease;
+}
+
+.proj-img:hover .item img {
+	-webkit-transform: scale(1.1);
+	transform: scale(1.2);
 }
 
 .proj-info {
