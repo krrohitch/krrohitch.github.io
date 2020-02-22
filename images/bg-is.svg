@@ -1,0 +1,81 @@
+<svg width="448" height="540" viewBox="0 0 448 540" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="448" height="540" fill="url(#paint0_linear)"/>
+<g opacity="0.16" filter="url(#filter0_d)">
+<rect opacity="0.8" x="0.288956" y="0.543561" width="255" height="39" rx="5.5" transform="matrix(0.984808 0.173648 -0.406896 0.913474 145.226 47.9969)" fill="white" stroke="#DDDDDD"/>
+<rect opacity="0.8" width="40" height="40" rx="6" transform="matrix(0.984808 0.173648 -0.406896 0.913474 357.719 85.508)" fill="#333333"/>
+<g clip-path="url(#clip0)">
+<path d="M366.664 110.731C369.384 111.21 372.499 109.554 373.623 107.032C374.746 104.509 373.453 102.075 370.733 101.596C368.014 101.116 364.898 102.773 363.775 105.295C362.651 107.818 363.945 110.251 366.664 110.731Z" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M372.744 113.773L371.01 110.512" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<rect opacity="0.6" width="120" height="16" rx="2" transform="matrix(0.984808 0.173648 -0.406896 0.913474 154.889 61.5664)" fill="#8A8A8A"/>
+<g clip-path="url(#clip1)">
+<g clip-path="url(#clip2)">
+<rect opacity="0.6" width="117" height="14" rx="2" transform="matrix(0.984808 0.173648 -0.406896 0.913474 115.297 121.214)" fill="white"/>
+<rect opacity="0.4" width="72" height="12" rx="2" transform="matrix(0.984808 0.173648 -0.406896 0.913474 107.972 137.657)" fill="white"/>
+</g>
+<g opacity="0.8">
+<rect width="56" height="32" rx="3" transform="matrix(0.984808 0.173648 -0.406896 0.913474 304.787 153.641)" fill="white"/>
+<rect x="0.288956" y="0.543561" width="71" height="47" rx="2.5" transform="matrix(0.984808 0.173648 -0.406896 0.913474 300.389 144.941)" stroke="white"/>
+</g>
+<rect opacity="0.4" width="14" height="14" rx="4" transform="matrix(0.984808 0.173648 -0.406896 0.913474 94.9519 166.888)" fill="white"/>
+<rect opacity="0.4" width="14" height="14" rx="4" transform="matrix(0.984808 0.173648 -0.406896 0.913474 86.0002 186.984)" fill="white"/>
+<rect opacity="0.4" width="14" height="14" rx="4" transform="matrix(0.984808 0.173648 -0.406896 0.913474 210.086 208.864)" fill="white"/>
+<rect opacity="0.6" width="64" height="14" rx="2" transform="matrix(0.984808 0.173648 -0.406896 0.913474 112.678 170.014)" fill="white"/>
+<rect opacity="0.6" width="96" height="14" rx="2" transform="matrix(0.984808 0.173648 -0.406896 0.913474 103.727 190.11)" fill="white"/>
+<rect opacity="0.6" width="40" height="14" rx="2" transform="matrix(0.984808 0.173648 -0.406896 0.913474 227.812 211.99)" fill="white"/>
+</g>
+<g clip-path="url(#clip3)">
+<rect width="256" height="48" rx="3" transform="matrix(0.984808 0.173648 -0.406896 0.913474 70.5381 228.227)" fill="#F8F8F8"/>
+<g opacity="0.8">
+<rect width="32" height="32" rx="2" transform="matrix(0.984808 0.173648 -0.406896 0.913474 79.1006 237.618)" fill="#333333"/>
+</g>
+<g clip-path="url(#clip4)">
+<rect opacity="0.6" width="64" height="12" rx="2" transform="matrix(0.984808 0.173648 -0.406896 0.913474 116.865 248.218)" fill="#333333"/>
+<rect opacity="0.4" width="24" height="8" rx="2" transform="matrix(0.984808 0.173648 -0.406896 0.913474 110.355 262.834)" fill="#8A8A8A"/>
+</g>
+<g opacity="0.8">
+<g clip-path="url(#clip5)">
+<path d="M280.727 292.875L279.913 294.702C279.464 295.711 279.981 296.684 281.069 296.876L290.917 298.613C292.005 298.805 293.251 298.142 293.7 297.133L294.514 295.306" stroke="#666666" stroke-width="1.5" stroke-linecap="round"/>
+<path d="M285.716 288.829L288.027 293.177L293.594 290.218" stroke="#666666" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M288.027 293.177L292.096 284.042" stroke="#666666" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+</g>
+</g>
+</g>
+<g style="mix-blend-mode:color">
+<rect width="448" height="540" fill="#00A5EC"/>
+</g>
+<defs>
+<filter id="filter0_d" x="35.0071" y="36" width="378.104" height="300.528" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
+<feOffset dy="4"/>
+<feGaussianBlur stdDeviation="8"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.08 0"/>
+<feBlend mode="multiply" in2="BackgroundImageFix" result="effect1_dropShadow"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
+</filter>
+<linearGradient id="paint0_linear" x1="121.625" y1="-4.63015e-06" x2="510.726" y2="304.186" gradientUnits="userSpaceOnUse">
+<stop stop-color="#00A5EC"/>
+<stop offset="1" stop-color="#008BDC"/>
+</linearGradient>
+<clipPath id="clip0">
+<rect width="16" height="16" transform="matrix(0.984808 0.173648 -0.406896 0.913474 364.653 98.5535)" fill="white"/>
+</clipPath>
+<clipPath id="clip1">
+<rect width="256" height="95" transform="matrix(0.984808 0.173648 -0.406896 0.913474 118.959 112.993)" fill="white"/>
+</clipPath>
+<clipPath id="clip2">
+<rect width="168" height="30" transform="matrix(0.984808 0.173648 -0.406896 0.913474 115.297 121.214)" fill="white"/>
+</clipPath>
+<clipPath id="clip3">
+<rect width="256" height="48" rx="3" transform="matrix(0.984808 0.173648 -0.406896 0.913474 70.5381 228.227)" fill="white"/>
+</clipPath>
+<clipPath id="clip4">
+<rect width="160" height="24" transform="matrix(0.984808 0.173648 -0.406896 0.913474 116.865 248.218)" fill="white"/>
+</clipPath>
+<clipPath id="clip5">
+<rect width="24" height="24" transform="matrix(0.984808 0.173648 -0.406896 0.913474 282.313 277.391)" fill="white"/>
+</clipPath>
+</defs>
+</svg>

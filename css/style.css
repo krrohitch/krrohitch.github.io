@@ -71,6 +71,7 @@ p {
 
 span {
 	color: #692DB7;
+	text-shadow: 0 2px 0 rgba(105, 45, 183, 0.16);
 }
 
 a span {
@@ -166,6 +167,15 @@ nav {
 
 .right-nav {
 	padding-top: 0.5rem;
+}
+
+.r-logo {
+	transition: 0.4s ease;
+}
+
+.r-logo:hover {
+	box-shadow: 0px 4px 8px rgba(105, 45, 183, 0.64), inset 0px -2px 0px rgba(0, 0, 0, 0.32);
+	cursor: crosshair;
 }
 
 nav .btn {
@@ -275,6 +285,15 @@ section {
 .proj-info>h5 {
 	margin-top: 4px;
 	color: rgba(255, 255, 255, 0.6);
+}
+
+.proj-is {
+	background: url(../images/bg-is.svg) #00A5EC no-repeat;
+	background-size: cover;
+}
+
+.proj-is:hover {
+	box-shadow: inset 0 -8px 0 0 rgba(0, 0, 0, 0.32), 0 8px 16px 0 rgba(0, 165, 236, 0.64);
 }
 
 .proj-crypto {
