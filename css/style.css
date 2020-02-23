@@ -91,16 +91,15 @@ a.btn {
 	border-radius: 4px;
 	color: #FFF;
 	background-color: #19181F;
-	box-shadow: 0 4px 8px rgba(0,0,0,.4);
+	box-shadow: inset 0 0 0 #692db7, 0 4px 8px rgba(0, 0, 0, 0.4);
 	display: inline-flex;
 	flex-direction: row;
 	align-items: center;
+	transition: 0.5s ease-in-out;
 }
 
 a.btn:hover {
-	background-color: #692DB7;
-	transition: 0.5s all;
-	box-shadow: 0 4px 8px rgba(105,45,183,.4);
+	box-shadow: inset 0 -48px 0 #692db7, 0 4px 12px rgba(105, 45, 183, 0.4);
 }
 
 a.link {
@@ -145,13 +144,13 @@ body>div {
 	right: 4rem;
 	border-radius: 50%;
 	background-color: rgba(250,250,250,0.6);
-	box-shadow: 0 4px 8px rgba(105,45,183,.12);
+	box-shadow: inset 0 0 0 #692db7, 0 4px 8px rgba(105,45,183,.12);
+	transition: 0.5s ease-in;
 }
 
 .cta:hover {
 	background-color: #FFF;
-	transition: 0.5s ease-in;
-	box-shadow: 0 4px 12px rgba(105,45,183,.24);
+	box-shadow: inset 0 -48px 0 #692db7, 0 4px 12px rgba(105,45,183,.24);
 }
 
 nav {
@@ -222,7 +221,8 @@ section {
 }
 
 #projects {
-	width: 100%;
+	width: 90%;
+	max-width: max-content;
 }
 
 .proj-container {
@@ -324,12 +324,12 @@ section {
 }
 
 .proj-roger {
-	background: url(../images/bg-roger.svg) #0C32F2 no-repeat;
+	background: url(../images/bg-roger.svg) #9600E0 no-repeat;
 	background-size: cover;
 }
 
 .proj-roger:hover {
-	box-shadow: inset 0 -8px 0 0 rgba(0, 0, 0, 0.32), 0 8px 16px 0 rgba(12, 50, 242, 0.64);
+	box-shadow: inset 0 -8px 0 0 rgba(0, 0, 0, 0.32), 0 8px 16px 0 rgba(150, 0, 224, 0.64);
 }
 
 .proj-z19 {
