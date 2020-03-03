@@ -1,6 +1,7 @@
 body {
 	font-size: 16px;
 	background-size: 12px;
+	background: black;
 }
 
 h1 {
@@ -55,14 +56,6 @@ nav {
 	background: url(../images/close.svg);
 	display: none;
 	transition: 2s cubic-bezier(0.47, 0, 0.75, 0.72);
-}
-
-#btn-menu:hover {
-	opacity: 0.1;
-}
-
-#btn-menu:hover + #btn-close {
-	display: block;
 	z-index: 2;
 }
 
@@ -123,9 +116,6 @@ section {
 	background-size: contain;
 }
 
-.item img {
-}
-
 .btn img {
 	padding-top: initial;
 	width: 0.8em;
@@ -146,12 +136,19 @@ section {
 	grid-template-columns: 1.5em 1fr;
 }
 
-.social .link {
-	margin-bottom: 0.75em;
-}
-
 #topScroll {
     text-align: center;
     left: 2em;
 	box-shadow: 0 4px 8px rgba(105,45,183,.24);
+}
+
+.proj-hero {
+	flex-direction: column;
+	height: auto;
+	width: auto;
+	max-width: unset;
+}
+
+.proj-hero .case-info {
+	width: 100%;
 }

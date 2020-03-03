@@ -10,6 +10,19 @@ function showPage() {
   document.getElementById("container").style.display = "block";
 }
 
+// Menu bar
+function openMenu() {
+  document.getElementById("btn-menu").style.display = "none";
+  document.getElementById("btn-close").style.display = "block";
+  document.getElementById("right-nav").style.display = "flex";
+}
+
+function closeMenu() {
+  document.getElementById("btn-menu").style.display = "block";
+  document.getElementById("btn-close").style.display = "none";
+  document.getElementById("right-nav").style.display = "none";
+}
+
 // Smooth scroll
 $(".smoothScroll").on("click", function (evt) {
 	var href = $(this).attr("href");
