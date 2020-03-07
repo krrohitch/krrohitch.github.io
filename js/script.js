@@ -2,7 +2,7 @@
 var timer;
 
 function preloader() {
-	timer = setTimeout(showPage, 200);
+	timer = setTimeout(showPage, 2000);
 }
 
 function showPage() {
