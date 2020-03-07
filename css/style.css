@@ -207,11 +207,11 @@ nav {
 	justify-content: space-between;
 }
 
-.left-nav {
+#left-nav {
 	z-index: 2;
 }
 
-.right-nav {
+#right-nav {
 	padding-top: 0.5rem;
 }
 
@@ -233,8 +233,7 @@ section {
 	width: 40%;
 	min-width: 480px;
 	max-width: 80%;
-	margin: 0 auto;
-	margin-bottom: 4em;
+	margin: 0 auto 4em;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -510,12 +509,7 @@ section {
 	padding-bottom: 0.125em;
 }
 
-.case-cover .item {
-	height: 99%;
-	width: 26em;
-}
-
-.case-cover .item img {
+.case-cover img {
 	height: 100%;
 	width: auto;
 }
@@ -542,6 +536,7 @@ section {
 }
 
 .case-text {
+	justify-content: flex-start;
 }
 
 .case-text h3 {
@@ -558,7 +553,7 @@ section {
 	flex-direction: row;
 	flex-wrap: wrap;
 	justify-content: center;
-	max-width: 100vw;
+	max-width: 80vw;
 }
 
 .case-flex img {

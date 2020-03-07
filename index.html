@@ -44,7 +44,7 @@
 
 	<!-- Navigation bar -->
 	<nav>
-		<div class="left-nav">
+		<div id="left-nav">
 			<a href="https://krrohitch.github.io/" title="Kumar Rohit Chandra, UI/UX Designer">
 				<img class="r-logo" src="images/r-logo.svg" alt="Rohit - Logo">
 			</a>
@@ -52,10 +52,10 @@
 		<div class="menu">
 			<div id="btn-menu" onclick="openMenu()"></div>
 			<div id="btn-close" onclick="closeMenu()"></div>
-			<div class="right-nav">
-				<a class="link" href="krrohitch-resume.pdf" target="_blank" rel="noopener" title="Rohit - Resume">Resume</a>
-				<a class="link smoothScroll" href="blog.html">Blog</a>
-				<a class="link smoothScroll" href="#contact">Contact</a>
+			<div id="right-nav">
+				<a class="link" href="krrohitch-resume.pdf" target="_blank" rel="noopener" title="Rohit - Resume" onclick="closeMenu()">Resume</a>
+				<a class="link smoothScroll" href="blog.html" onclick="closeMenu()">Blog</a>
+				<a class="link smoothScroll" href="#contact" onclick="closeMenu()">Contact</a>
 			</div>
 		</div>
 	</nav>

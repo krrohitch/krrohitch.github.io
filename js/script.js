@@ -2,7 +2,7 @@
 var timer;
 
 function preloader() {
-	timer = setTimeout(showPage, 2000);
+	timer = setTimeout(showPage, 200);
 }
 
 function showPage() {
@@ -10,17 +10,21 @@ function showPage() {
   document.getElementById("container").style.display = "block";
 }
 
-// Menu bar
+//  Menu
 function openMenu() {
   document.getElementById("btn-menu").style.display = "none";
   document.getElementById("btn-close").style.display = "block";
   document.getElementById("right-nav").style.display = "flex";
+  document.getElementById("right-nav").style.opacity = "1";
+  document.getElementById("right-nav").style.height = "100vh";
 }
 
 function closeMenu() {
   document.getElementById("btn-menu").style.display = "block";
   document.getElementById("btn-close").style.display = "none";
   document.getElementById("right-nav").style.display = "none";
+  document.getElementById("right-nav").style.opacity = "0";
+  document.getElementById("right-nav").style.top = "unset";
 }
 
 // Smooth scroll

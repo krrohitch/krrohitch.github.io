@@ -1,7 +1,6 @@
 body {
 	font-size: 16px;
 	background-size: 12px;
-	background: black;
 }
 
 h1 {
@@ -59,37 +58,37 @@ nav {
 	z-index: 2;
 }
 
-.right-nav {
+#right-nav {
+	display: none;
 	position: fixed;
 	bottom: 0;
 	left: 0;
 	right: 0;
 	height: 0;
 	width: 100vw;
-	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	align-items: center;
+	align-items: stretch;
+	text-align: center;
 	background-color: #FFFFFF;
 	transition: 0.4s ease-in;
-	opacity: 0;
+	z-index: 1;
+	transition: 2s cubic-bezier(0.47, 0, 0.75, 0.72);
+/*	display: flex;
+	opacity: 1;
+	height: 100vh;
+	*/
 }
 
-.right-nav .link{
+#right-nav .link{
 	font-size: 1.25em;
 	padding: 0.5em;
 	color: #212121;	
 }
 
-#btn-menu:hover ~ .right-nav {
-	top: 0;
-	opacity: 1;
-	height: 100vh;
-	z-index: 1;
-}
-
 section {
 	min-width: 80%;
+	margin: 0 auto 2.4em;
 }
 
 .proj-container {
@@ -109,7 +108,7 @@ section {
 
 .proj-info {
 	margin-top: 1em;
-	max-width: inherit;
+	max-width: 80%;
 }
 
 .proj-z19 {
@@ -146,9 +145,19 @@ section {
 	flex-direction: column;
 	height: auto;
 	width: auto;
-	max-width: unset;
+	max-width: 80vw;
+	margin: 1em auto;
+	padding: 1em 1em 0;
 }
 
 .proj-hero .case-info {
 	width: 100%;
+}
+
+.case-cover img {
+	width: 100%;
+}
+
+.case-text {
+	align-items: flex-start; 
 }

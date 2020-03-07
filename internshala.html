@@ -1,11 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	
-	<title>Internshala App - Kumar Rohit Chandra</title>
+	<!-- Last Published: Tues September 3 2019 -->
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-143758189-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-143758189-1');
+	</script>
+
+	<!-- Meta tags -->
+	<title>Kumar Rohit Chandra - Designer</title>
+	<meta name="keywords"	 content="kumar rohit chandra, krrohitch, noida, designer, ui ux, ui designer, ux designer, front end developer, engineer, internship">
+	<meta name="description" content="Hello! I'm Kumar Rohit Chandra - a UI/UX designer based in Noida">
+	<meta name="author"		 content="Kumar Rohit Chandra">
+	<meta name="viewport"	 content="width=device-width, initial-scale=1.0">
+	<meta name="theme-color"	content="#692DB7"/>
+	<meta charset="utf-8">
+
+	<meta property="og:title"		content="Kumar Rohit Chandra, UI/UX Designer" />
+	<meta property="og:description"	content="Hello! I'm Kumar Rohit Chandra - a UI/UX designer based in Noida" />
+	<meta property="og:type" content="portfolio">
+	<meta property="og:image"		content="http://krrohitch.github.io/images/image.png" />
 
 	<link href="css/style.css" type="text/css" rel="stylesheet">
-	<link href="css/mobi-style.css" type="text/css" rel="stylesheet" media="screen and (max-width: 800px)">
+	<link href="css/mobi-style.css" type="text/css" rel="stylesheet" media="only screen and (max-width: 800px)">
 	<link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
 </head>
 
@@ -21,32 +44,31 @@
 
 	<!-- Navigation bar -->
 	<nav>
-		<div class="left-nav">
+		<div id="left-nav">
 			<a href="https://krrohitch.github.io/" title="Kumar Rohit Chandra, UI/UX Designer">
 				<img class="r-logo" src="images/r-logo.svg" alt="Rohit - Logo">
 			</a>
 		</div>
 		<div class="menu">
-			<div id="btn-menu"></div>
-			<div id="btn-close"></div>
-			<div class="right-nav">
-				<a class="link" href="krrohitch-resume.pdf" target="_blank" rel="noopener" title="Rohit - Resume">Resume</a>
-				<a class="link smoothScroll" href="index.html#contact">Contact</a>
+			<div id="btn-menu" onclick="openMenu()"></div>
+			<div id="btn-close" onclick="closeMenu()"></div>
+			<div id="right-nav">
+				<a class="link" href="krrohitch-resume.pdf" target="_blank" rel="noopener" title="Rohit - Resume" onclick="closeMenu()">Resume</a>
+				<a class="link smoothScroll" href="blog.html" onclick="closeMenu()">Blog</a>
+				<a class="link smoothScroll" href="index.html#contact" onclick="closeMenu()">Contact</a>
 			</div>
 		</div>
 	</nav>
 
+	<!-- Hero section -->
 	<section class="proj-hero case-is">
 		<div class="proj-info">
 			<h3>Internshala App</h3>
 			<h5>App Design</h5>
 			<p>Improving the internship finding & applying experience for 6 million+ college students</p>
-			<br>
 		</div>
 		<div class="case-cover">
-			<div class="item">
-				<img src="images/cover-is.svg">
-			</div>
+			<img src="images/cover-is.svg">
 		</div>
 	</section>
 
