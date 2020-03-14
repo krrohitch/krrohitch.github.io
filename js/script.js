@@ -17,6 +17,7 @@ function openMenu() {
   document.getElementById("right-nav").style.display = "flex";
   document.getElementById("right-nav").style.opacity = "1";
   document.getElementById("right-nav").style.height = "100vh";
+  document.getElementById("container").style.position = "fixed";
 }
 
 function closeMenu() {
@@ -24,7 +25,8 @@ function closeMenu() {
   document.getElementById("btn-close").style.display = "none";
   document.getElementById("right-nav").style.display = "none";
   document.getElementById("right-nav").style.opacity = "0";
-  document.getElementById("right-nav").style.top = "unset";
+  document.getElementById("right-nav").style.height = "0";
+  document.getElementById("container").style.position = "initial";
 }
 
 // Smooth scroll
