@@ -42,7 +42,7 @@ $(".smoothScroll").on("click", function (evt) {
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
-  if (document.body.scrollTop > 4000 || document.documentElement.scrollTop > 4000) {
+  if (document.body.scrollTop > 2000 || document.documentElement.scrollTop > 2000) {
     document.getElementById("topScroll").style.display = "block";
   } else {
     document.getElementById("topScroll").style.display = "none";

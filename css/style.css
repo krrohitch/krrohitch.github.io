@@ -56,14 +56,14 @@ h1 {
 	font-size: 1.6em;
 	font-weight: 700;
 	line-height: 1.25;
-	color: #212121;
+	color: #1A1A1F;
 }
 
 h2 {
 	margin: 1.25rem auto;
 	font-size: 1.4em;
 	font-weight: 800;
-	color: #212121;
+	color: #1A1A1F;
 }
 
 h3 {
@@ -71,16 +71,24 @@ h3 {
 	font-size: 1.4em;
 	font-weight: 700;
 	line-height: 1.125;
-	color: #212121;
+	color: #1A1A1F;
 }
 
 h5 {
 	margin: 4px 0;
 	font-size: 0.9em;
 	font-weight: 500;
-	color: #616161;
+	color: #606066;
 	text-transform: uppercase;
 	letter-spacing: 0.25px;
+}
+
+h4 {
+	font-size: 1.2em;
+	font-weight: 500;
+	line-height: 1.2;
+	margin-bottom: 0.8em;
+	color: #606066;
 }
 
 h6 {
@@ -95,6 +103,11 @@ p {
 	font-weight: 400;
 	line-height: 1.5;
 	margin: 0.4em auto;
+	letter-spacing: -0.1px;
+}
+
+b {
+	font-weight: 600;
 }
 
 span {
@@ -104,17 +117,13 @@ span {
 }
 
 span:hover {
-	box-shadow: inset 0px -8px 0 0px rgba(142, 96, 200, 0.32);
 	text-shadow: 0 0 0 rgba(105, 45, 183, 0.16);
-}
-
-a span {
-	font-size: 1.125em;
+	box-shadow: inset 0px -8px 0 0px rgba(142, 96, 200, 0.32);
 }
 
 a {
-	color: #616161;
-	font-size: 0.9em;
+	color: #692DB7;
+	font-size: 1em;
 	text-decoration: none;
 }
 
@@ -146,16 +155,13 @@ a.link:hover {
 	transition: 0.5s ease-in-out;
 }
 
-b {
-	font-weight: 600;
-}
-
 q {
 	font-style: italic;
 	font-weight: 500;
-	font-size: 1.4em;
+	font-size: 1.2em;
 	line-height: 1.5;
 	color: #692DB7;
+	letter-spacing: -0.1px;
 	margin: 2rem auto;
 }
 
@@ -164,8 +170,12 @@ mark {
 	background-color: rgba(97, 97, 97, 0.1);
 }
 
+::selection {
+	background-color: #fff176;
+}
+
 body>div {
-	background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAIElEQVQoU2P0Vmuy3Xqr7jADAcBISAFMflQh3pAiOngAXYMEC6JkPMQAAAAASUVORK5CYII=);
+	background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAIElEQVQoU2P01mgy3nqj7iwDAcBISAFMflQh3pAiOngAXWMEC3mSbXQAAAAASUVORK5CYII=);
 	background-size: 16px;
 	animation: fadein 2s ease-in-out;
 }
@@ -252,13 +262,16 @@ nav {
 	padding-top: 0.5rem;
 }
 
+#right-nav a {
+	color: #606066;
+}
+
 .r-logo {
 	transition: 0.4s ease;
 }
 
 .r-logo:hover {
 	box-shadow: 0px 4px 8px rgba(105, 45, 183, 0.64), inset 0px -2px 0px rgba(0, 0, 0, 0.32);
-	cursor: crosshair;
 }
 
 nav .btn {
@@ -278,7 +291,7 @@ section {
 }
 
 section:last-child {
-	margin-bottom: 0;
+	margin-bottom: 6em;
 }
 
 @keyframes moveup {
@@ -297,7 +310,7 @@ section:last-child {
 	height: 8em;
 	width: 4px;
 	margin: auto;
-	background-color: #212121;
+	background-color: #1A1A1F;
 }
 
 .bottom-bar {
@@ -305,7 +318,7 @@ section:last-child {
 	width: 4px;
 	margin: auto;
 	margin-bottom: 3em;
-	background-color: #212121;
+	background-color: #1A1A1F;
 }
 
 #projects {
@@ -617,7 +630,6 @@ section:last-child {
 .case-flex p {
 	margin: -1em auto 1em;
 	text-align: center;
-	font-size: 0.9em;
 	font-weight: 500;
 	color: #757575;
 }
