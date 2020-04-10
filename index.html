@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<!-- Last Published: Mon April 3 2020 -->
+	<!-- Last Published: April 5 2020 -->
 
 	<!-- Meta tags -->
+	<title>Kumar Rohit Chandra, UI/UX Designer</title>
 	<meta charset="utf-8">
 	<meta name="description" content="Portfolio Website">
 	<meta name="keywords" content="kumar rohit chandra, krrohitch, kumar rohit, rohit, noida, designer, ui ux, ui designer, ux designer, product designer, front end developer, engineer, internship, internshala, do your thng, dyt, nibble computer society, ncs, figma">
@@ -33,7 +34,6 @@
 	<meta property="og:site_name" content="Kumar Rohit Chandra, UI/UX Designer"/>
 
 	<link href="css/style.css" type="text/css" rel="stylesheet">
-	<link href="css/mobi-style.css" type="text/css" rel="stylesheet" media="only screen and (max-width: 800px)">
 	<link id="favicon" rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
 </head>
 
@@ -56,11 +56,12 @@
 		</div>
 		<div class="menu">
 			<div id="btn-menu" onclick="openMenu()"></div>
-			<div id="btn-close" onclick="closeMenu()"></div>
 			<div id="right-nav">
-				<a class="link" href="krrohitch-resume.pdf" target="_blank" rel="noopener" title="Rohit - Resume" onclick="closeMenu()">Resume</a>
-				<a class="link smoothScroll" href="blog.html" onclick="closeMenu()">Blog</a>
-				<a class="link smoothScroll" href="#contact" onclick="closeMenu()">Contact</a>
+				<div id="btn-close" onclick="closeMenu()"></div>
+				<a class="nav" href="krrohitch-resume.pdf" target="_blank" rel="noopener" title="Rohit - Resume" onclick="closeMenu()">Resume</a>
+				<a class="nav smoothScroll" href="#projects" onclick="closeMenu()">Work</a>
+				<a class="nav smoothScroll	" href="#about" onclick="closeMenu()">About</a>
+				<a class="nav smoothScroll" href="#contact" onclick="closeMenu()">Contact</a>
 			</div>
 		</div>
 	</nav>
@@ -68,162 +69,44 @@
 	<!-- Hero section -->
 	<section id="hero">
 		<h1>Hello! I'm <span>Kumar Rohit Chandra</span></h1>
-		<p>I am a UI/UX designer & front-end developer with a hands-on experience of 2.5 years. Recently, I was building a design system as an intern at <a href="https://internshala.com/" target="_blank" rel="noopener" title="Internshala - Website"><b>Internshala</b></a>.</p>
-		<p>I create modern, functional and engaging experiences with a design thinking approach & push pixels with a purpose.</p>
+		<p>UI/UX designer & front-end developer. I design functional & intuitive experiences. I thrive in solving problems with a design thinking approach. Recently, I was building a design system as an intern at <a class="link" href="https://internshala.com/" target="_blank" rel="noopener" title="Internshala - Website">Internshala</a>.</p>
 	</section>
 
 	<!-- Projects section -->
 	<section id="projects">
 
 		<div class="top-bar"></div>
-		<h2>PROJECTS</h2>
+		<h2>Projects</h2>
 		<div class="bottom-bar"></div>
 
 		<div class="proj-container">
-		<a href="internshala.html">
-		<div class="proj-box proj-is">
-			<div class="proj-img">
-				<div class="item">
-					<img src="images/img-is.svg">
+			<a href="https://internshala.html" target="_blank" rel="noopener" alt="Internshala">
+				<div class="proj-box proj-is">
+					<h3>Internshala</h3>
+					<h5>App Design · Design System</h5>
 				</div>
-			</div>
-			<div class="proj-info">
-				<h3>Internshala App</h3>
-				<h5>UI/UX Design</h5>
-				<p>Improving the internship finding & applying experience for 6 million+ college students</p>
-			</div>
-		</div>
-		</a>
+			</a>
 
-		<a href="https://www.cryptorai.com/" target="_blank" rel="noopener" title="Cryptorai - Website">
-		<div class="proj-box proj-crypto">
-			<div class="proj-img">
-				<div class="item">
-					<img src="images/img-crypto.svg">
+			<a href="https://doyourthng.com" target="_blank" rel="noopener" alt="Do Your Thng">
+				<div class="proj-box proj-dyt">
+					<h3>Do Your Thng</h3>
+					<h5>Product Design · Design System</h5>
 				</div>
-			</div>
-			<div class="proj-info">
-				<h3>Cryptorai App</h3>
-				<h5>UI/UX Design</h5>
-				<p>Cryptocurrency tracking app to maintain a wallet, transaction history and holdings for crypto-coins</p>
-			</div>
-		</div>
-		</a>
+			</a>
 
-		<a href="http://hackncs.com" target="_blank" rel="noopener" title="Nibble Computer Society - Website">
-		<div class="proj-box proj-ncs">
-			<div class="proj-img">
-				<div class="item">
-					<img src="images/img-ncs.svg">
+			<a href="http://hackncs.com" target="_blank" rel="noopener" alt="Nibble Computer Society">
+				<div class="proj-box proj-ncs">
+					<h3>Nibble Computer Society</h3>
+					<h5>UI/UX Design · Brand Strategy</h5>
 				</div>
-			</div>
-			<div class="proj-info">
-				<h3>Nibble Computer Society</h3>
-				<h5>Web Design</h5>
-				<p>Website for student society at college presenting the upcoming events, projects and the team</p>
-			</div>
-		</div>
-		</a>
+			</a>
 
-		<a href="http://kyc.surge.sh" target="_blank" rel="noopener" title="Know Your College - Demo Website">
-		<div class="proj-box proj-kyc">
-			<div class="proj-img">
-				<div class="item">
-					<img src="images/img-kyc.svg">
+			<a href="https://www.cryptorai.com/" target="_blank" rel="noopener" alt="Cryptorai">
+				<div class="proj-box proj-crypto">
+					<h3>Cryptorai App</h3>
+					<h5>UI/UX Design</h5>
 				</div>
-			</div>
-			<div class="proj-info">
-				<h3>Know Your College</h3>
-				<h5>Web Design</h5>
-				<p>Information portal website to explore the campus map and discover nearby places for college students</p>
-			</div>
-		</div>
-		</a>
-
-		<a href="http://register.hackncs.com/" target="_blank" rel="noopener" title="Bad Roger - Website">
-		<div class="proj-box proj-roger">
-			<div class="proj-img">
-				<div class="item">
-					<img src="images/img-roger.svg">
-				</div>
-			</div>
-			<div class="proj-info">
-				<h3>Bad Roger - Chatbot</h3>
-				<h5>UI/UX Design</h5>
-				<p>Bad Roger is a converational chatbot, which makes filling forms easy & interactive for the users</p>
-			</div>
-		</div>
-		</a>
-
-		<a href="http://zealicon2019.surge.sh/" target="_blank" rel="noopener" title="Zealicon 19 - Website">
-		<div class="proj-box proj-z19">
-			<div class="proj-img">
-				<div class="item">
-					<img src="images/img-z19.svg">
-				</div>
-			</div>
-			<div class="proj-info">
-				<h3>Zealicon 19</h3>
-				<h5>Product Design</h5>
-				<p>Yearly themed logo and website for Zealicon - the Annual Techno-Cultural festival of JSSATEN</p>
-			
-			</div>
-		</div>
-		</a>
-		</div>
-	</section>
-
-	<!-- Skills section -->
-	<section id="skills">
-
-		<div class="top-bar"></div>
-		<h2>SKILLS</h2>
-		<div class="bottom-bar"></div>
-
-		<div class="skil-box">
-			<h3>Tools & Software</h3>
-			<div class="skil-tool">
-				<img src="images/pencil-logo.svg" alt="Pencil">
-				<p>Pen + Paper</p>
-				<img src="images/sketch-logo.svg" alt="Sketch">
-				<p>Sketch</p>
-				<img src="images/figma-logo.svg" alt="Figma">
-				<p>Figma</p>
-				<img src="images/xd-logo.svg" alt="Adobe XD">
-				<p>Adobe XD</p>
-				<img src="images/ps-logo.svg" alt="Photoshop">
-				<p>Photoshop</p>
-				<img src="images/ai-logo.svg" alt="Illustrator">
-				<p>Illustrator</p>
-				<img src="images/html-logo.svg" alt="HTML5">
-				<p>HTML5</p>
-				<img src="images/css-logo.svg" alt="CSS3">
-				<p>CSS3</p>
-				<img src="images/js-logo.svg" alt="JavaScript">
-				<p>JavaScript</p>
-				<img src="images/balsamiq-logo.svg" alt="Balsamiq">
-				<p>Balsamiq</p>
-			</div>
-		</div>
-
-		<div class="skil-box">
-			<h3>Design</h3>
-			<div class="skil-dsgn">
-				<img src="images/bullet.svg" alt="Bullet">
-				<p>Product design</p>
-				<img src="images/bullet.svg" alt="Bullet">
-				<p>Typography & Metrics</p>
-				<img src="images/bullet.svg" alt="Bullet">
-				<p>Onboarding experience</p>
-				<img src="images/bullet.svg" alt="Bullet">
-				<p>Wireframes & User flows</p>
-				<img src="images/bullet.svg" alt="Bullet">
-				<p>Design systems</p>
-				<img src="images/bullet.svg" alt="Bullet">
-				<p>Rapid prototyping</p>
-				<img src="images/bullet.svg" alt="Bullet">
-				<p>Information Architecture</p>
-			</div>
+			</a>
 		</div>
 	</section>
 
@@ -231,28 +114,28 @@
 	<section id="about">
 
 		<div class="top-bar"></div>
-		<h2>ABOUT</h2>
+		<h2>About Me</h2>
 		<div class="bottom-bar"></div>
 
 		<img src="images/img-rohit.png" alt="Rohit - Profile Image">
-		<p>I'm Rohit, a self-taught designer studying in Noida. I aim to solve design problems to build modern, functional and engaging experiences for tomorrow. I'm an inspired & hard-working individual with a knack for attention to detail & analysis in design.</p>
-		<p>Currently, I am in my final year at JSS Noida, pursuing B.Tech (EE). In college, I have designed creatives & interactions for college fest, online games, platforms and multiple events. I am the Creative Head of Nibble Computer Society, where I collaborate with my colleagues to work on technical projects to help college students.</p>
-		<p>Beyond design, I have an affinity for <a href="https://www.youtube.com/user/everyframeapainting" target="_blank" rel="noopener" title="Every Frame a Painting - YouTube Channel"><span>cinema</span></a>; dissecting its many layers from story to cinematography. I appreciate all genres of <a href="https://open.spotify.com/user/sugnpep4e2g4kxr3qrwv3q6ga" target="_blank" rel="noopener" title="Rohit - Spotify Profile"><span>music</span></a>, but I loop back to Rock and R&B every once a while. I like to study <a href="http://philosophizethis.org/" target="_blank" rel="noopener" title="Philosophize This! – Podcast Website"><span>philosophy</span></a>, explore conspiracies and watch <a href="https://www.youtube.com/results?search_query=krrohitch" target="_blank" rel="noopener" title="Rohit - YouTube Playlists"><span>video essays</span></a>.</p>
+		<p>A self-taught designer with a knack for attention to detail & analysis in design. I love Atomic Design, Inter font and 8 point grids. I’m learning Webflow and After Effect next.</p>
+		<p>Currently, I am in my final year at JSS Noida, pursuing B.Tech (EE). I am the Creative Head of Nibble Computer Society, where I collaborate with my colleagues to work on technical projects to help college students.</p>
+		<p>Beyond design, I have an affinity for <a class="link" href="https://www.youtube.com/user/everyframeapainting" target="_blank" rel="noopener" title="Every Frame a Painting - YouTube Channel">cinema</a>; dissecting its many layers from story to cinematography. I appreciate all genres of <a class="link" href="https://open.spotify.com/user/sugnpep4e2g4kxr3qrwv3q6ga" target="_blank" rel="noopener" title="Rohit - Spotify Profile">music</a>, but I loop back to Rock and R&B every once a while. I like to study <a class="link" href="http://philosophizethis.org/" target="_blank" rel="noopener" title="Philosophize This! – Podcast Website">philosophy</a>, explore conspiracies and watch <a class="link" href="https://www.youtube.com/results?search_query=krrohitch" target="_blank" rel="noopener" title="Rohit - YouTube Playlists">video essays</a>.</p>
 	</section>
 
 	<!-- Contact section -->
 	<section id="contact">
 
 		<div class="top-bar"></div>
-		<h2>CONTACT</h2>
+		<h2>Get in Touch</h2>
 		<div class="bottom-bar"></div>
 
-		<p>I'm always interested in working on new products. Let's talk about your project and I can help you with the designs.</p>
+		<p>I'm always interested in working on new products. Thinking about hiring me or would like to discuss a project?</p>
 		<a class="btn mail" href="mailto:krrohitch@gmail.com">Email me</a>
 		<div class="social">
-			<a class="link" href="https://www.linkedin.com/in/krrohitch/" target="_blank" rel="noopener" title="LinkedIn profile"><img src="images/logo-linkedin.svg" alt="LinkedIn Logo"></a>
-			<a class="link" href="https://dribbble.com/krrohitch" target="_blank" rel="noopener" title="Dribble portfolio"><img src="images/logo-dribbble.svg" alt="Dribbble Logo"></a>
-			<a class="link" href="https://www.behance.net/krrohitch" target="_blank" rel="noopener" title="Behance Portfolio"><img src="images/logo-behance.svg" alt="Behance Logo"></a>
+			<a class="link linkedin" href="https://www.linkedin.com/in/krrohitch/" target="_blank" rel="noopener" title="LinkedIn profile"><img src="images/logo-linkedin.svg" alt="LinkedIn Logo"></a>
+			<a class="link dribbble" href="https://dribbble.com/krrohitch" target="_blank" rel="noopener" title="Dribble portfolio"><img src="images/logo-dribbble.svg" alt="Dribbble Logo"></a>
+			<a class="link behance" href="https://www.behance.net/krrohitch" target="_blank" rel="noopener" title="Behance Portfolio"><img src="images/logo-behance.svg" alt="Behance Logo"></a>
 		</div>
 	</section>
 	</div>
