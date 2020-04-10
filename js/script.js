@@ -2,7 +2,7 @@
 var timer;
 
 function preloader() {
-	timer = setTimeout(showPage, 2000);
+	timer = setTimeout(showPage, 1600);
 }
 
 function showPage() {
@@ -10,7 +10,7 @@ function showPage() {
 	document.getElementById("container").style.display = "block";
 }
 
-//  Menu
+// Menu
 function openMenu() {
 	document.getElementById("btn-menu").style.display = "none";
 	document.getElementById("btn-close").style.display = "block";
@@ -31,18 +31,8 @@ function closeMenu() {
 	}
 }
 
-// Smooth scroll
-$(".smoothScroll").on("click", function (evt) {
-	var href = $(this).attr("href");
-	$("html, body").animate({
-		scrollTop: $(href).offset().top + 120
-	}, 800);
-	evt.preventDefault();
-});
-
 // Scroll to top
 window.onscroll = function() {scrollFunction()};
-
 function scrollFunction() {
 	if (document.body.scrollTop > 2000 || document.documentElement.scrollTop > 2200) {
 		document.getElementById("topScroll").style.display = "block";
@@ -50,11 +40,3 @@ function scrollFunction() {
 		document.getElementById("topScroll").style.display = "none";
 	}
 }
-
-$("#topScroll").on("click", function (evt) {
-	var href = $(this).attr("href");
-	$("html, body").animate({
-		scrollTop: $(href).offset().top
-	}, 800);
-	evt.preventDefault();
-});

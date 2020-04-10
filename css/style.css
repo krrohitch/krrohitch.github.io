@@ -44,10 +44,11 @@
 
 /* Theme */
 html {
-  --primary-1: #1A1A1F;
-  --primary-2: #606066;
-  --secondary: #FFFFFF;
-  --accent: #692DB7;
+	--primary-1: #1A1A1F;
+	--primary-2: #606066;
+	--secondary: #FFFFFF;
+	--accent: #692DB7;
+	scroll-behavior: smooth;
 }
 
 html[data-theme="dark"] {
@@ -88,7 +89,7 @@ h1 {
 	
 
 h2 {
-	margin: 1.25em auto;
+	margin: 0;
 	font-size: 1.4em;
 	font-weight: 800;
 	color: var(--primary-1);
@@ -177,7 +178,7 @@ mark {
 .loader {
 	width: 6em;
 	border-radius: 0.5em;
-	animation: bounce 2s ease-in-out infinite;
+	animation: bounce 1.6s ease-in-out infinite;
 }
 
 @keyframes bounce {
@@ -312,7 +313,7 @@ section {
 	width: 40%;
 	min-width: 480px;
 	max-width: 80%;
-	margin: 0 auto 4em;
+	margin: 0 auto 10em;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -321,11 +322,8 @@ section {
 	@media (max-width: 800px) {
 		section {
 			min-width: 80%;
-			margin: 0 auto 2.4em;
+			margin: 0 auto 8.5em;
 		}
-	}
-	section:last-child {
-		margin-bottom: 2em !important;
 	}
 
 @keyframes moveup {
@@ -333,24 +331,31 @@ section {
 	100% {padding-top: 0}
 }
 
-.top-bar {
-	height: 8em;
+.heading {
+	margin: -4.5em auto;
+	display: flex;
+	flex-direction: column;
+}
+
+.heading::before {
+	content: "";
+	height: 6em;
 	width: 4px;
-	margin: auto;
+	margin: 0 auto 1em;
 	background-color: var(--primary-1);
 }
 
-.bottom-bar {
-	height: 2em;
+.heading::after {
+	content: "";
+	height: 1.5em;
 	width: 4px;
-	margin: auto;
-	margin-bottom: 3em;
+	margin: 1em auto 6em;
 	background-color: var(--primary-1);
 }
 
 /* Hero section */
 #hero {
-	margin: 0 auto;
+	margin: 0 auto 6em;
 	height: 75vh;
 	justify-content: center;
 	align-items: flex-start;
@@ -475,8 +480,7 @@ section {
 }
 	@media (max-width: 800px) {
 		.btn {
-		padding: 0.5em 1.75em 0.75em;
-		font-size: 0.875em;
+			font-size: 0.875em;
 		}
 	}
 
@@ -521,7 +525,7 @@ section {
 #topScroll {
 	display: none;
 	font-weight: 500;
-	padding: 1em 1em 0.9em;
+	padding: 0.9em 1em;
 	position: fixed;
 	bottom: 2em;
 	left: 4em;
@@ -534,6 +538,7 @@ section {
 }
 	@media (max-width: 800px) {
 		#topScroll {
+			padding: 0.7em;
 			text-align: center;
 			left: 2em;
 			box-shadow: 0 6px 12px rgba(26, 26, 31, 0.24);
