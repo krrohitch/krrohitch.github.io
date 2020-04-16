@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<!-- Last Published: April 10 2020
+	<!-- Last Published: April 17 2020
 
 	       /\
 	      /**\
@@ -86,30 +86,28 @@
 		<h2 class="heading">Projects</h2>
 
 		<div class="proj-container">
-			<a href="https://internshala.html" target="_blank" rel="noopener" alt="Internshala">
-				<div class="proj-box proj-is">
-					<h3>Internshala</h3>
-					<h5>App Design · Design System</h5>
-				</div>
+			<a href="#modal-is" alt="Internshala" class="proj-box" id="proj-is">
+				<h3>Internshala</h3>
+				<h5>App Design · Design System</h5>
 			</a>
 
 			<a href="https://doyourthng.com" target="_blank" rel="noopener" alt="Do Your Thng">
-				<div class="proj-box proj-dyt">
+				<div class="proj-box" id="proj-dyt">
 					<h3>Do Your Thng</h3>
 					<h5>Product Design · Design System</h5>
 				</div>
 			</a>
 
 			<a href="http://hackncs.com" target="_blank" rel="noopener" alt="Nibble Computer Society">
-				<div class="proj-box proj-ncs">
+				<div class="proj-box" id="proj-ncs">
 					<h3>Nibble Computer Society</h3>
 					<h5>UI/UX Design · Brand Strategy</h5>
 				</div>
 			</a>
 
 			<a href="https://www.cryptorai.com/" target="_blank" rel="noopener" alt="Cryptorai">
-				<div class="proj-box proj-crypto">
-					<h3>Cryptorai App</h3>
+				<div class="proj-box" id="proj-crypto">
+					<h3>Cryptorai Inc.</h3>
 					<h5>UI/UX Design</h5>
 				</div>
 			</a>
@@ -142,8 +140,28 @@
 	</section>
 	</div>
 
+	<div class="modal" id="modal-is">
+		<div class="proj-full">
+			<img class="proj-cover" src="images/cover-is.png" alt="Internshala - Project Cover">
+			<section>
+				<a class="fab close-proj" href="#proj-is" onclick="closeProj"><img src="images/x.svg" alt="Close icon"></a>
+				<div class="proj-title">
+					<h3>Internshala <a href="https://internshala.com" target="_blank" rel="noopener" alt="Internshala - website"><img src="images/external-link.svg" alt="Internshala - Website"></a></h3>
+
+					<h5>App Design · Design System</h5>
+				</div>
+				<p>As a UI/UX Design intern at Internshala, I built their design system and redesigned the <a class="link" href="https://play.google.com/store/apps/details?id=com.internshala.app&hl=en_IN" target="_blank" rel="noopener" title="Internshala App - Play Store">Android app</a>.</p>
+				<p>I worked with the UI/UX lead to build an inclusive system that defines identity, consistency and scalability. Based on <a class="link" href="https://atomicdesign.bradfrost.com/" target="_blank" rel="noopener" title="Atomic Design - Brad Frost">Brad Frost’s Atomic Design</a>, it is a comprehensive framework, style guide & component library.</p>
+				<img class="proj-img" src="images/img-is01.png" alt="Internshala - Design System">
+				<p>Later, I designed the end-to-end experience & high-fidelity prototypes for the Internshala App, based on the new design system. It was focused on clear information, intuitive interactions and a unified experience. Also, I collaborated with engineers for dev hand-offs & user testing.</p>
+				<img class="proj-img" src="images/img-is02.png" alt="Internshala - Android App">
+				<p>The redesigned app was launched on Play Store on January 20th.</p>
+			</section>
+		</div>
+	</div>
+
 	<!-- Scroll up button -->
-	<a id="topScroll" href="#top" onclick="scrollTop"><img src="images/arrow-up.svg" alt="Arrow up icon"></a>
+	<a class="fab" id="scroll-top" href="#top" onclick="scrollTop"><img src="images/arrow-up.svg" alt="Arrow up icon"></a>
 	</div>
 
 	<!-- Global site tag (gtag.js) - Google Analytics -->

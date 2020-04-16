@@ -1,5 +1,8 @@
 // Preloader
 var timer;
+var container = document.getElementById("container");
+var navbar = document.getElementById("right-nav");
+var menubtn = document.getElementById("btn-menu");
 
 function preloader() {
 	timer = setTimeout(showPage, 1600);
@@ -7,36 +10,56 @@ function preloader() {
 
 function showPage() {
 	document.getElementById("preloader").style.display = "none";
-	document.getElementById("container").style.display = "block";
+	container.style.display = "block";
 }
 
 // Menu
 function openMenu() {
-	document.getElementById("btn-menu").style.display = "none";
-	document.getElementById("btn-close").style.display = "block";
-	document.getElementById("right-nav").style.display = "flex";
-	document.getElementById("right-nav").style.opacity = "1";
-	document.getElementById("right-nav").style.height = "100vh";
-	document.getElementById("container").style.position = "fixed";
+	menubtn.style.display = "none";
+	navbar.style.display = "flex";
+	navbar.style.opacity = "1";
+	navbar.style.height = "100vh";
+	container.style.position = "fixed";
 }
 
 function closeMenu() {
 	if (document.documentElement.clientWidth < 800) {
-		document.getElementById("btn-menu").style.display = "block";
-		document.getElementById("btn-close").style.display = "none";
-		document.getElementById("right-nav").style.display = "none";
-		document.getElementById("right-nav").style.opacity = "0";
-		document.getElementById("right-nav").style.height = "0";
-		document.getElementById("container").style.position = "initial";
+		menubtn.style.display = "block";
+		navbar.style.display = "none";
+		navbar.style.opacity = "0";
+		navbar.style.height = "0";
+		container.style.position = "initial";
 	}
 }
 
+// Project
+var modal = document.getElementById("modal-is");
+var btn = document.getElementById("proj-is");
+var span = document.getElementsByClassName("close-proj")[0];
+
+btn.onclick = function() {
+  modal.style.display = "block";
+	container.style.position = "fixed";
+}
+span.onclick = function() {
+  modal.style.display = "none";
+	container.style.position = "initial";
+}
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+		container.style.position = "initial";
+  }
+}
+
 // Scroll to top
+var topScroll = document.getElementById("scroll-top")
+
 window.onscroll = function() {scrollFunction()};
 function scrollFunction() {
 	if (document.body.scrollTop > 2000 || document.documentElement.scrollTop > 2200) {
-		document.getElementById("topScroll").style.display = "block";
+		topScroll.style.display = "block";
 	} else {
-		document.getElementById("topScroll").style.display = "none";
+		topScroll.style.display = "none";
 	}
 }

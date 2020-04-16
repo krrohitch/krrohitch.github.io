@@ -1,4 +1,4 @@
-/* Fonts import */
+ Fonts import */
 @font-face {
 	font-family: 'Graphik';
 	font-weight: 500;
@@ -50,7 +50,7 @@ html[data-theme="dark"] {
 body {
 	margin: 0;
 	font-size: 20px;
-	font-family: 'Graphik', 'Inter', Roboto, sans-serif;
+	font-family: 'Graphik', Roboto, sans-serif;
 	-webkit-font-smoothing: antialiased;
 	overflow-x: hidden;
 }	
@@ -62,7 +62,7 @@ body {
 
 body>div {
 	background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAIElEQVQoU2P01mgy3nqj7iwDAcBISAFMflQh3pAiOngAXWMEC3mSbXQAAAAASUVORK5CYII=);
-	background-size: 20px 20px;
+	background-size: 16px 16px;
 	animation: fadein 2s ease-in-out;
 }
 	@media (max-width: 800px) {
@@ -131,12 +131,12 @@ a {
 a.link {
 	color: var(--accent);
 	font-weight: 500;
-	text-shadow: 0 2px 0 rgba(105, 45, 183, 0.16);
+	text-shadow: 0 2px 0 rgba(105, 45, 183, 0.08);
 	transition: 0.4s ease-in;
 }
 	a.link:hover {
 		text-shadow: 0 0 0 rgba(105, 45, 183, 0.16);
-		box-shadow: inset 0 -8px 0 rgba(142, 96, 200, 0.32);
+		box-shadow: inset 0 -0.4em 0 rgba(105, 45, 183, 0.24);
 	}
 
 q {
@@ -182,7 +182,8 @@ mark {
 	25% {
 		opacity: 1;
 		scale: 1;
-		filter: grayscale(0%);	}	
+		filter: grayscale(0%);
+	}	
 	80% {
 		opacity: 1;
 		scale: 1;
@@ -198,6 +199,7 @@ mark {
 
 #container {
 	display: none;
+	width: 100%;
 	background-image: linear-gradient(to bottom, rgba(255,255,255,0), rgba(255,255,255,0.8));
 	animation: fadein 0.8s ease-in;
 	overflow-x: hidden;
@@ -206,6 +208,17 @@ mark {
 @keyframes fadein {
 	0%	 {opacity: 0};
 	100% {opacity: 1};
+}
+
+@keyframes zoomin {
+	0%	 {
+		opacity: 0;
+		scale: 0.8;
+	}
+	100% {
+		opacity: 1;
+		scale: 1;
+	}
 }
 
 /* Navigation bar */
@@ -237,7 +250,6 @@ nav {
 			width: 1.5em;
 			height: 1.5em;
 			background: url(../images/close.svg);
-			display: none;
 			position: absolute;
 			top: 2em;
 			right: 2em;
@@ -250,6 +262,7 @@ nav {
 
 #right-nav {
 	padding-top: 0.5em;
+	animation: fadein 0.2s ease-in;
 }
 	@media (max-width: 800px) {
 		#right-nav {
@@ -279,7 +292,7 @@ nav {
 		a.nav {
 			font-size: 1.25em;
 			padding: 0.75em;
-			color: #212121;	
+			color: var(--primary-1);	
 		}
 	}
 
@@ -297,7 +310,7 @@ nav {
 
 /* All sections */
 section {
-	width: 40%;
+	width: 40vw;
 	min-width: 480px;
 	max-width: 80%;
 	margin: 0 auto 10em;
@@ -351,7 +364,7 @@ section {
 /* Project section */
 #projects {
 	width: 48em;
-	max-width: 90%;
+	max-width: 90vw;
 }
 
 .proj-container {
@@ -374,7 +387,7 @@ section {
 	height: 25em;
 	display: flex;
 	flex-direction: column;
-	align-self: stretch;
+	text-align: center;
 	margin: 0.6em;
 	padding: 2em 1.6em;
 	border-radius: 8px;
@@ -394,39 +407,39 @@ section {
 		color: white;
 	}
 
-.proj-is {
+#proj-is {
 	background: url(../images/img-is.png) #008BDC no-repeat;
 	background-size: cover;
 	box-shadow: 0 8px 24px 0 rgba(0, 139, 220, 0.4);
 }
-	.proj-is:hover {
+	#proj-is:hover {
 		box-shadow: 0 2px 8px 0 rgba(0, 139, 220, 0.6), inset 0 0 0 4px #008BDC;
 	}
 
-.proj-dyt {
+#proj-dyt {
 	background: url(../images/img-dyt.png) #F02486 no-repeat;
 	background-size: cover;
 	box-shadow: 0 8px 24px 0 rgba(255, 37, 114, 0.4);
 }
-	.proj-dyt:hover {
+	#proj-dyt:hover {
 		box-shadow: 0 2px 8px 0 rgba(255, 37, 114, 0.6), inset 0 0 0 4px #F02486;
 	}
 
-.proj-ncs {
+#proj-ncs {
 	background: url(../images/img-ncs.png) #FF9314 no-repeat;
 	background-size: cover;
 	box-shadow: 0 8px 24px 0 rgba(255, 147, 20, 0.4);
 }
-	.proj-ncs:hover {
+	#proj-ncs:hover {
 		box-shadow: 0 2px 8px 0 rgba(255, 147, 20, 0.6), inset 0 0 0 4px #FF9314;
 	}
 
-.proj-crypto {
+#proj-crypto {
 	background: url(../images/img-crypto.png) #3B55A5 no-repeat;
 	background-size: cover;
 	box-shadow: 0 8px 24px 0 rgba(59, 85, 165, 0.4);
 }
-	.proj-crypto:hover {
+	#proj-crypto:hover {
 		box-shadow: 0 2px 8px 0 rgba(59, 85, 165, 0.6), inset 0 0 0 4px #3B55A5;
 	}
 
@@ -448,7 +461,7 @@ section {
 }
 
 #contact p {
-	margin: 1em auto 0;
+	margin: 0 auto;
 	text-align: center;
 }
 
@@ -460,9 +473,6 @@ section {
 	color: var(--secondary);
 	background-color: var(--primary-1);
 	box-shadow: inset 0 0 0 var(--accent), 0 4px 16px rgba(0, 0, 0, 0.4);
-	display: inline-flex;
-	flex-direction: row;
-	align-items: center;
 	transition: 0.4s ease-in;
 }
 	@media (max-width: 800px) {
@@ -509,31 +519,118 @@ section {
 }
 
 /* Scroll up button */
-#topScroll {
-	display: none;
-	font-weight: 500;
-	padding: 0.9em 1em;
-	position: fixed;
-	bottom: 2em;
-	left: 4em;
+.fab {
 	border-radius: 50%;
+	padding: 0.9em 1em;
 	background-color: var(--secondary);
-	opacity: 0.8;
 	box-shadow: 0 8px 16px rgba(26, 26, 31, 0.24);
-	animation: fadein 0.8s ease-in;
+	opacity: 0.8;
+	animation: fadein 0.4s ease-in;
 	transition: 0.2s ease-in;
 }
 	@media (max-width: 800px) {
-		#topScroll {
+		.fab {
 			padding: 0.7em 0.8em;
-			text-align: center;
-			left: 2em;
 			box-shadow: 0 6px 12px rgba(26, 26, 31, 0.24);
 		}
 	}
-	#topScroll:hover {
-		opacity: 1;
+	.fab:hover {
 		box-shadow: 0 4px 8px rgba(105, 45, 183, 0.4);
+		opacity: 1;
 	}
 
-/* Fin. */
+#scroll-top {
+	display: none;
+	position: fixed;
+	bottom: 2em;
+	left: 4em;
+}
+	@media (max-width: 800px) {
+		#scroll-top {
+			left: 2em;
+		}
+	}
+	#scroll-top:hover {
+	}
+
+/* Project Summary */
+.modal {
+  display: none;
+  position: relative;
+  z-index: 4;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.4);
+}
+
+.proj-full {
+	margin: 8vh 16vw;
+	background: var(--secondary);
+  border-radius: 8px;
+  z-index: 4;
+	padding-bottom: 0.1px;
+}
+	@media (max-width: 800px) {
+		.proj-full {
+			margin: 0;
+		}
+	}
+	.proj-full section {
+		margin: 0 auto 4em;
+		background: var(--secondary);
+		animation: none;
+	}
+
+.proj-cover {
+	width: 100%;
+	height: auto;
+	border-radius: 8px 8px 0 0;
+}
+	@media (max-width: 800px) {
+		.proj-cover {
+			height: 40vh;
+			object-fit: cover;
+		}
+	}
+
+.proj-title {
+	align-self: flex-start;
+	margin: 2em 0 1em;
+}
+
+.proj-img {
+	width: 90%;
+	min-width: 50vw;
+	margin: 1.6em 0;
+}
+	@media (max-width: 800px) {
+		.proj-img {
+			width: 90vw;
+		}
+	}
+
+.close-proj {
+	position: fixed;
+	top: 12vh;
+	right: 18vw;
+}
+	@media (max-width: 800px) {
+		.close-proj {
+			top: 1.6em;
+			right: 1.6em;
+		}
+	}
+
+#modal-is a.link {
+	color: #008BDC;
+	text-shadow: 0 2px 0 rgba(0, 139, 220, 0.08);
+}
+	a.link:hover {
+		text-shadow: 0 0 0 rgba(0, 139, 220, 0.16);
+		box-shadow: inset 0 -0.4em 0 rgba(0, 139, 220, 0.32);
+	}
+/* Fin. 
