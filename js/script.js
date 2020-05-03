@@ -5,7 +5,7 @@ var navbar = document.getElementById("right-nav");
 var menubtn = document.getElementById("btn-menu");
 
 function preloader() {
-	timer = setTimeout(showPage, 1600);
+	timer = setTimeout(showPage, 16);
 }
 
 function showPage() {
@@ -33,23 +33,32 @@ function closeMenu() {
 }
 
 // Project
-var modal = document.getElementById("modal-is");
-var btn = document.getElementById("proj-is");
-var span = document.getElementsByClassName("close-proj")[0];
+var modal = document.getElementsByClassName("modal");
+var btn = document.getElementsByClassName("proj-box");
+var span = document.getElementsByClassName("close-proj");
 
-btn.onclick = function() {
-  modal.style.display = "block";
-	container.style.position = "fixed";
-}
-span.onclick = function() {
-  modal.style.display = "none";
-	container.style.position = "initial";
-}
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
+for (var i = 0; i < btn.length; i++) {
+	var thisBtn = btn[i];
+	var thisSpan = span[i];
+
+	thisBtn.onclick = function() {
+		var thisModal = document.getElementById(this.dataset.modal);
+		thisModal.style.display = "block";
+		container.style.position = "fixed";
+	}
+
+	thisSpan.onclick = function() {
+		var thisModal = document.getElementById(this.dataset.modal);
+		thisModal.style.display = "none";
 		container.style.position = "initial";
-  }
+	}
+
+	// window.onclick = function(event) {
+	// 	if (event.target == modal) {
+	// 		modal.style.display = "none";
+	// 		container.style.position = "initial";
+	// 	}
+	// }
 }
 
 // Scroll to top

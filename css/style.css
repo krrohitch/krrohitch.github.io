@@ -1,4 +1,4 @@
- Fonts import */
+/* Fonts import */
 @font-face {
 	font-family: 'Graphik';
 	font-weight: 500;
@@ -40,6 +40,10 @@ html {
 	--primary-2: #606066;
 	--secondary: #FFFFFF;
 	--accent: #692DB7;
+	--is: #008BDC;
+	--dyt: #F02486;
+	--ncs: #FA820A;
+	--cryp: #3B55A5;
 	scroll-behavior: smooth;
 }
 
@@ -96,8 +100,16 @@ h3 {
 	color: var(--primary-1);
 }
 
+h4 {
+	margin: 3.5rem 0 0.5rem;
+	font-size: 1.2em;
+	font-weight: 600;
+	line-height: 1.285;
+	color: var(--primary-1);
+}
+
 h5 {
-	margin: 6px 0;
+	margin: 4px 0;
 	font-size: 0.875em;
 	font-weight: 500;
 	color: var(--primary-2);
@@ -130,29 +142,12 @@ a {
 
 a.link {
 	color: var(--accent);
-	font-weight: 500;
-	text-shadow: 0 2px 0 rgba(105, 45, 183, 0.08);
+	border-bottom: 1px dotted var(--accent);
 	transition: 0.4s ease-in;
 }
 	a.link:hover {
-		text-shadow: 0 0 0 rgba(105, 45, 183, 0.16);
 		box-shadow: inset 0 -0.4em 0 rgba(105, 45, 183, 0.24);
 	}
-
-q {
-	font-style: italic;
-	font-weight: 500;
-	font-size: 1.2em;
-	line-height: 1.5;
-	color: var(--accent);
-	letter-spacing: -0.1px;
-	margin: 2em auto;
-}
-
-mark {
-	color: var(--accent);
-	background-color: rgba(97, 97, 97, 0.1);
-}
 
 ::selection {
 	background-color: #fff176;
@@ -168,8 +163,8 @@ mark {
 }
 
 .loader {
-	width: 6em;
-	border-radius: 0.5em;
+	width: 8rem;
+	border-radius: 0.5rem;
 	animation: bounce 1.6s ease-in-out infinite;
 }
 
@@ -223,7 +218,7 @@ mark {
 
 /* Navigation bar */
 nav {
-	padding: 1em 4em;
+	padding: 1.25rem 5rem;
 	border-top: 8px solid var(--accent);
 	display: flex;
 	flex-direction: row;
@@ -231,7 +226,7 @@ nav {
 }
 	@media (max-width: 800px) {
 		nav {
-			padding: 1em 2em;
+			padding: 1rem 2em;
 		}
 
 		.menu {
@@ -241,8 +236,8 @@ nav {
 		}
 
 		#btn-menu {
-			width: 1.5em;
-			height: 1.5em;
+			width: 1.5rem;
+			height: 1.5rem;
 			background: url(../images/menu.svg);
 		}
 
@@ -310,7 +305,7 @@ nav {
 
 /* All sections */
 section {
-	width: 40vw;
+	width: 44vw;
 	min-width: 480px;
 	max-width: 80%;
 	margin: 0 auto 10em;
@@ -391,56 +386,62 @@ section {
 	margin: 0.6em;
 	padding: 2em 1.6em;
 	border-radius: 8px;
-	transition: 0.2s ease-in-out;
+	z-index: 1;
+	transition: 0.2s ease-out;
 }
 	@media (max-width: 800px) {
 		.proj-box {
 			margin: 0.8em;
 		}
+
+		.proj-box:hover {
+			scale: 1.05;
+		}
 	}
 
-	.proj-box h3 {
-		color: white;
+	.proj-box:hover {
+		z-index: 2;
+		scale: 1.02;
 	}
 
-	.proj-box h5 {
+	.proj-box h3, .proj-box h5 {
 		color: white;
 	}
 
 #proj-is {
-	background: url(../images/img-is.png) #008BDC no-repeat;
+	background: url(../images/img-is.png) var(--is) no-repeat;
 	background-size: cover;
 	box-shadow: 0 8px 24px 0 rgba(0, 139, 220, 0.4);
 }
 	#proj-is:hover {
-		box-shadow: 0 2px 8px 0 rgba(0, 139, 220, 0.6), inset 0 0 0 4px #008BDC;
+		box-shadow: 0 8px 32px 0 rgba(0, 139, 220, 0.6);
 	}
 
 #proj-dyt {
-	background: url(../images/img-dyt.png) #F02486 no-repeat;
+	background: url(../images/img-dyt.png) var(--dyt) no-repeat;
 	background-size: cover;
 	box-shadow: 0 8px 24px 0 rgba(255, 37, 114, 0.4);
 }
 	#proj-dyt:hover {
-		box-shadow: 0 2px 8px 0 rgba(255, 37, 114, 0.6), inset 0 0 0 4px #F02486;
+		box-shadow: 0 8px 32px 0 rgba(255, 37, 114, 0.6);
 	}
 
 #proj-ncs {
-	background: url(../images/img-ncs.png) #FF9314 no-repeat;
+	background: url(../images/img-ncs.png) var(--ncs) no-repeat;
 	background-size: cover;
 	box-shadow: 0 8px 24px 0 rgba(255, 147, 20, 0.4);
 }
 	#proj-ncs:hover {
-		box-shadow: 0 2px 8px 0 rgba(255, 147, 20, 0.6), inset 0 0 0 4px #FF9314;
+		box-shadow: 0 8px 32px 0 rgba(255, 147, 20, 0.6);
 	}
 
-#proj-crypto {
-	background: url(../images/img-crypto.png) #3B55A5 no-repeat;
+#proj-cryp {
+	background: url(../images/img-cryp.png) var(--cryp) no-repeat;
 	background-size: cover;
 	box-shadow: 0 8px 24px 0 rgba(59, 85, 165, 0.4);
 }
-	#proj-crypto:hover {
-		box-shadow: 0 2px 8px 0 rgba(59, 85, 165, 0.6), inset 0 0 0 4px #3B55A5;
+	#proj-cryp:hover {
+		box-shadow: 0 8px 32px 0 rgba(59, 85, 165, 0.6);
 	}
 
 /* About section */
@@ -459,11 +460,10 @@ section {
 	margin-bottom: 0;
 	padding-bottom: 4em; 
 }
-
-#contact p {
-	margin: 0 auto;
-	text-align: center;
-}
+	#contact p {
+		margin: 0 auto;
+		text-align: center;
+	}
 
 .btn {
 	margin-top: 2em;
@@ -497,12 +497,13 @@ section {
 		}
 	}
 
-.social .link {
+.social a {
 	padding: 0 2px;
 	margin: 0.25em;
 	border-radius: 4px;
+	transition: 0.4s ease-in;
 }
-	.social .link:hover{
+	.social a:hover{
 		filter: invert(1)
 	}
 
@@ -565,6 +566,7 @@ section {
   overflow: auto;
   background-color: rgb(0,0,0);
   background-color: rgba(0,0,0,0.4);
+  transition: 0.2s ease-in;
 }
 
 .proj-full {
@@ -580,8 +582,9 @@ section {
 		}
 	}
 	.proj-full section {
-		margin: 0 auto 4em;
+		margin: 0 auto 4rem;
 		background: var(--secondary);
+		align-items: flex-start;
 		animation: none;
 	}
 
@@ -592,26 +595,30 @@ section {
 }
 	@media (max-width: 800px) {
 		.proj-cover {
-			height: 40vh;
+			height: 50vh;
 			object-fit: cover;
 		}
 	}
 
 .proj-title {
-	align-self: flex-start;
-	margin: 2em 0 1em;
+	text-align: center;
+	margin: 1rem 0 2rem;
 }
+	.proj-title h3 {
+		line-height: 1.285
+	}
 
 .proj-img {
-	width: 90%;
+	width: 100%;
 	min-width: 50vw;
-	margin: 1.6em 0;
+	margin: 1rem 0;
+	align-self: center;
 }
-	@media (max-width: 800px) {
+	@media (max-width: 800px){
 		.proj-img {
-			width: 90vw;
-		}
-	}
+    	width: 90vw;
+    }
+  }
 
 .close-proj {
 	position: fixed;
@@ -626,11 +633,35 @@ section {
 	}
 
 #modal-is a.link {
-	color: #008BDC;
-	text-shadow: 0 2px 0 rgba(0, 139, 220, 0.08);
+	color: var(--is);
+	border-bottom: 1px dotted var(--is);
 }
-	a.link:hover {
-		text-shadow: 0 0 0 rgba(0, 139, 220, 0.16);
+	#modal-is a.link:hover {
 		box-shadow: inset 0 -0.4em 0 rgba(0, 139, 220, 0.32);
 	}
+
+#modal-dyt a.link {
+	color: var(--dyt);
+	border-bottom: 1px dotted var(--dyt);
+}
+	#modal-dyt a.link:hover {
+		box-shadow: inset 0 -0.4em 0 rgba(240, 36, 134, 0.32);
+	}
+
+#modal-ncs a.link {
+	color: var(--ncs);
+	border-bottom: 1px dotted var(--ncs);
+}
+	#modal-ncs a.link:hover {
+		box-shadow: inset 0 -0.4em 0 rgba(250, 110, 10, 0.32);
+	}
+
+#modal-cryp a.link {
+	color: var(--cryp);
+	border-bottom: 1px dotted var(--cryp);
+}
+	#modal-cryp a.link:hover {
+		box-shadow: inset 0 -0.4em 0 rgba(59, 85, 165, 0.32);
+	}
+
 /* Fin. 
