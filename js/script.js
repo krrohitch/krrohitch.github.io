@@ -5,7 +5,7 @@ var navbar = document.getElementById("right-nav");
 var menubtn = document.getElementById("btn-menu");
 
 function preloader() {
-	timer = setTimeout(showPage, 16);
+	timer = setTimeout(showPage, 1600);
 }
 
 function showPage() {
@@ -52,13 +52,6 @@ for (var i = 0; i < btn.length; i++) {
 		thisModal.style.display = "none";
 		container.style.position = "initial";
 	}
-
-	// window.onclick = function(event) {
-	// 	if (event.target == modal) {
-	// 		modal.style.display = "none";
-	// 		container.style.position = "initial";
-	// 	}
-	// }
 }
 
 // Scroll to top
